@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+	char a[20] = {"Я изучаю"};
+	char b[40] = {"язык программирования"};
+	char c[10] = {"СИ!""};
+	char *p_a = a;
+	char *p_b = b;
+	char *p_c = c;
+	mass_func_a(p_a);
+	mass_func_b(p_b);
+	mass_func_c(p_c);
+	printf("mass = %s", a);
+}
+
+char mass_func_a(*p_a)
+{
+	*p_a = {"Мы изучаем"};
+	return *p_a;
+}
